@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial 4: CSS — &lt;aprenda/&gt;</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="bracket">&lt;</span>aprenda<span class="bracket">/&gt;</span></div>
+  <nav>
+    <a href="index.html">início</a>
+    <a href="tutorial-1.html">tutoriais</a>
+    <a href="#sobre">sobre</a>
+  </nav>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">trilha de tutoriais</div>
+    <div class="tutorial-list">
+      <a class="tutorial-item" href="tutorial-1.html"><span class="dot"></span>tutorial 1</a>
+      <a class="tutorial-item" href="tutorial-2.html"><span class="dot"></span>tutorial 2</a>
+      <a class="tutorial-item" href="tutorial-3.html"><span class="dot"></span>tutorial 3</a>
+      <a class="tutorial-item active" href="tutorial-4.html"><span class="dot"></span>tutorial 4</a>
+      <a class="tutorial-item" href="tutorial-5.html"><span class="dot"></span>tutorial 5</a>
+      <a class="tutorial-item" href="tutorial-6.html"><span class="dot"></span>tutorial 6</a>
+      <a class="tutorial-item" href="tutorial-7.html"><span class="dot"></span>tutorial 7</a>
+      <a class="tutorial-item" href="tutorial-8.html"><span class="dot"></span>tutorial 8</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">parte do tutorial 4</div>
+    <h1 class="tag-heading"><span class="bracket">&lt;</span>css<span class="bracket">/&gt;</span></h1>
+    <p class="lede">
+      O HTML organiza o conteúdo, mas quem dá cor, espaçamento e aparência é o CSS. Neste tutorial
+      você vai entender como ele funciona e ver o mesmo site antes e depois de receber estilo.
+    </p>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 1</span>
+      <h3>Explicação do CSS</h3>
+      <p>
+        Uma regra de CSS tem duas partes: o <b>seletor</b>, que diz qual tag vai ser estilizada, e
+        as <b>declarações</b>, entre chaves, que dizem o que mudar. Cada declaração é uma
+        propriedade seguida de dois-pontos e um valor, terminando em ponto e vírgula.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">estilo.css</div>
+      </div>
+      <div class="demo-body" style="grid-template-columns: 1fr;">
+        <div class="demo-code" style="border-right:0;"><span class="comment">/* seletor */</span>
+<span class="tagname">p</span> {
+  <span class="attr">color</span>: <span class="str">#1F8F63</span>;   <span class="comment">/* propriedade: valor */</span>
+  <span class="attr">font-size</span>: <span class="str">18px</span>;
+}</div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 2</span>
+      <h3>Tags que você pode estilizar e o que dá pra mudar</h3>
+      <p>
+        Praticamente toda tag pode ser estilizada. Algumas propriedades comuns:
+        <code class="tag-mono">color</code> (cor do texto), <code class="tag-mono">background-color</code>
+        (cor de fundo), <code class="tag-mono">font-size</code> (tamanho do texto),
+        <code class="tag-mono">margin</code> (espaço fora do elemento),
+        <code class="tag-mono">padding</code> (espaço dentro do elemento) e
+        <code class="tag-mono">border-radius</code> (cantos arredondados).
+      </p>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 3</span>
+      <h3>O resultado do CSS: antes e depois</h3>
+      <p>
+        Veja o mesmo trecho de HTML — sem nenhuma linha de CSS, e depois com apenas algumas
+        regras aplicadas.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">sem css</div>
+      </div>
+      <div class="demo-body" style="grid-template-columns: 1fr;">
+        <div class="demo-preview" style="border-right:0;">
+          <iframe srcdoc="
+            <style>body{margin:0;display:flex;align-items:center;justify-content:center;height:170px;
+              font-family:sans-serif;background:#fff;}</style>
+            <div>
+              <h2>Ana Souza</h2>
+              <p>Aprendendo HTML e CSS</p>
+              <button>Seguir</button>
+            </div>
+          "></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">com css</div>
+      </div>
+      <div class="demo-body" style="grid-template-columns: 1fr;">
+        <div class="demo-preview" style="border-right:0;">
+          <iframe srcdoc="
+            <style>
+              body{margin:0;display:flex;align-items:center;justify-content:center;height:170px;
+                background:#FBF8F2;font-family:sans-serif;}
+              .cartao{background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:22px 26px;
+                width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);}
+              .cartao h2{margin:0 0 6px;font-size:1.1rem;color:#1F2421;}
+              .cartao p{margin:0 0 14px;color:#6B6F76;font-size:0.9rem;}
+              .cartao button{background:#1F8F63;color:#fff;border:0;padding:8px 18px;border-radius:6px;
+                font-size:0.9rem;cursor:pointer;}
+            </style>
+            <div class='cartao'>
+              <h2>Ana Souza</h2>
+              <p>Aprendendo HTML e CSS</p>
+              <button>Seguir</button>
+            </div>
+          "></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="curiosidade">
+      <b>Curiosidade:</b> mesmo sem escrever nenhuma linha de CSS, uma página nunca aparece
+      totalmente "crua" — todo navegador já vem com um estilo básico embutido, é por isso que
+      títulos e parágrafos já saem com algum espaçamento.
+    </div>
+
+    <div class="nav-footer">
+      <a href="tutorial-3.html">← tutorial 3</a>
+      <a href="tutorial-5.html">tutorial 5: mais CSS →</a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

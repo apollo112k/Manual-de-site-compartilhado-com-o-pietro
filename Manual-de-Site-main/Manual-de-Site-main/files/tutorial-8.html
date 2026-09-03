@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial 8: JavaScript na prática — &lt;aprenda/&gt;</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="bracket">&lt;</span>aprenda<span class="bracket">/&gt;</span></div>
+  <nav>
+    <a href="index.html">início</a>
+    <a href="tutorial-1.html">tutoriais</a>
+    <a href="#sobre">sobre</a>
+  </nav>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">trilha de tutoriais</div>
+    <div class="tutorial-list">
+      <a class="tutorial-item" href="tutorial-1.html"><span class="dot"></span>tutorial 1</a>
+      <a class="tutorial-item" href="tutorial-2.html"><span class="dot"></span>tutorial 2</a>
+      <a class="tutorial-item" href="tutorial-3.html"><span class="dot"></span>tutorial 3</a>
+      <a class="tutorial-item" href="tutorial-4.html"><span class="dot"></span>tutorial 4</a>
+      <a class="tutorial-item" href="tutorial-5.html"><span class="dot"></span>tutorial 5</a>
+      <a class="tutorial-item" href="tutorial-6.html"><span class="dot"></span>tutorial 6</a>
+      <a class="tutorial-item" href="tutorial-7.html"><span class="dot"></span>tutorial 7</a>
+      <a class="tutorial-item active" href="tutorial-8.html"><span class="dot"></span>tutorial 8</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">parte do tutorial 8</div>
+    <h1 class="tag-heading"><span class="bracket">&lt;</span>aprofundando<span class="bracket">/&gt;</span></h1>
+    <p class="lede">
+      Último tutorial da trilha! Vamos aprofundar um pouco mais o JavaScript e fechar com dois
+      exercícios — um para completar lacunas, outro para você criar algo sozinho.
+    </p>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 1</span>
+      <h3>Aprofundar mais em JavaScript</h3>
+      <p>
+        Além de <code class="tag-mono">onclick</code> direto no HTML, dá para "escutar" eventos
+        pelo próprio JavaScript com <code class="tag-mono">addEventListener</code>, e usar
+        <code class="tag-mono">if</code> para tomar decisões — por exemplo, mostrar uma mensagem
+        diferente dependendo do que a pessoa fizer.
+      </p>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 2</span>
+      <h3>Exercício: complete as lacunas</h3>
+      <p>
+        O código abaixo deveria trocar a cor de fundo da página quando o botão for clicado, mas
+        faltam algumas partes. Descubra o que preencher em cada lacuna.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">exercicio-lacunas.html — complete o código</div>
+      </div>
+      <div class="demo-body" style="grid-template-columns: 1fr;">
+        <div class="demo-code" style="border-right:0;">&lt;<span class="tagname">button</span> <span class="attr">onclick</span>=<span class="str">"___()"</span>&gt;Mudar cor&lt;/<span class="tagname">button</span>&gt;
+
+&lt;<span class="tagname">script</span>&gt;
+<span class="tagname">function</span> ___() {
+  document.body.style.___ = <span class="str">"lightyellow"</span>;
+}
+&lt;/<span class="tagname">script</span>&gt;</div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 3</span>
+      <h3>Exercício final: crie você mesmo</h3>
+      <p>
+        Desafio: faça um código JavaScript que, quando o botão do meio for clicado, abra uma
+        "interface" nova — pode ser uma caixa com uma mensagem, uma janela simples ou uma seção
+        que aparece na tela. Use o que aprendeu sobre <code class="tag-mono">onclick</code> e sobre
+        trocar o conteúdo ou o estilo de um elemento com JavaScript. Não existe uma única resposta
+        certa — o objetivo é praticar juntando tudo o que você viu na trilha.
+      </p>
+    </div>
+
+    <div class="curiosidade">
+      <b>Curiosidade:</b> HTML, CSS e JavaScript são as três tecnologias que rodam por trás de
+      praticamente todo site que você visita — inclusive este aqui.
+    </div>
+
+    <div class="nav-footer">
+      <a href="tutorial-7.html">← tutorial 7</a>
+      <a href="index.html">você concluiu a trilha! 🎉 voltar ao início</a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

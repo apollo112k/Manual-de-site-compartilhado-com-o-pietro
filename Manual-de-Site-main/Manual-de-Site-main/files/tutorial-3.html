@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial 3: Praticando com tags — &lt;aprenda/&gt;</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="bracket">&lt;</span>aprenda<span class="bracket">/&gt;</span></div>
+  <nav>
+    <a href="index.html">início</a>
+    <a href="tutorial-1.html">tutoriais</a>
+    <a href="#sobre">sobre</a>
+  </nav>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">trilha de tutoriais</div>
+    <div class="tutorial-list">
+      <a class="tutorial-item" href="tutorial-1.html"><span class="dot"></span>tutorial 1</a>
+      <a class="tutorial-item" href="tutorial-2.html"><span class="dot"></span>tutorial 2</a>
+      <a class="tutorial-item active" href="tutorial-3.html"><span class="dot"></span>tutorial 3</a>
+      <a class="tutorial-item" href="tutorial-4.html"><span class="dot"></span>tutorial 4</a>
+      <a class="tutorial-item" href="tutorial-5.html"><span class="dot"></span>tutorial 5</a>
+      <a class="tutorial-item" href="tutorial-6.html"><span class="dot"></span>tutorial 6</a>
+      <a class="tutorial-item" href="tutorial-7.html"><span class="dot"></span>tutorial 7</a>
+      <a class="tutorial-item" href="tutorial-8.html"><span class="dot"></span>tutorial 8</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">parte do tutorial 3</div>
+    <h1 class="tag-heading"><span class="bracket">&lt;</span>praticando<span class="bracket">/&gt;</span></h1>
+    <p class="lede">
+      Você já conhece as tags principais. Agora vamos entender o que cada parte de um código faz,
+      ver mais exemplos prontos e, no fim, praticar copiando um código para criar o seu próprio.
+    </p>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 1</span>
+      <h3>O que cada parte do código faz</h3>
+      <p>
+        Repare nos três pedaços de uma tag: o <b>nome</b> (diz o que ela é), os <b>atributos</b>
+        (informações extras, como <code class="tag-mono">class="cartao"</code>) e o <b>conteúdo</b>
+        (o que fica entre a abertura e o fechamento). É essa combinação que forma cada elemento
+        da página.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">exemplo.html</div>
+        <div class="demo-tab">resultado</div>
+      </div>
+      <div class="demo-body">
+        <div class="demo-code"><span class="comment">&lt;!-- nome da tag: a --&gt;</span>
+&lt;<span class="tagname">a</span> <span class="attr">href</span>=<span class="str">"#"</span>&gt;
+  <span class="comment">&lt;!-- atributo: href --&gt;</span>
+  Clique aqui
+  <span class="comment">&lt;!-- conteúdo --&gt;</span>
+&lt;/<span class="tagname">a</span>&gt;
+
+&lt;<span class="tagname">ul</span>&gt;
+  &lt;<span class="tagname">li</span>&gt;Item 1&lt;/<span class="tagname">li</span>&gt;
+  &lt;<span class="tagname">li</span>&gt;Item 2&lt;/<span class="tagname">li</span>&gt;
+&lt;/<span class="tagname">ul</span>&gt;</div>
+        <div class="demo-preview">
+          <iframe srcdoc="
+            <style>
+              body{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+                height:100vh;gap:14px;background:#FBF8F2;font-family:sans-serif;color:#1F2421;}
+              a{color:#1F8F63;font-weight:600;}
+              ul{margin:0;padding-left:18px;}
+            </style>
+            <a href='#'>Clique aqui</a>
+            <ul><li>Item 1</li><li>Item 2</li></ul>
+          "></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 2</span>
+      <h3>Mostrando mais exemplos</h3>
+      <p>
+        Quanto mais exemplos você vê, mais fácil fica reconhecer o padrão. Aqui está um exemplo um
+        pouco maior, juntando várias tags que você já conhece dos tutoriais anteriores em uma única
+        página.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">pagina.html</div>
+        <div class="demo-tab">resultado</div>
+      </div>
+      <div class="demo-body">
+        <div class="demo-code">&lt;<span class="tagname">h1</span>&gt;Meu primeiro site&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">p</span>&gt;Bem-vindo à minha página!&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">ul</span>&gt;
+  &lt;<span class="tagname">li</span>&gt;Sobre mim&lt;/<span class="tagname">li</span>&gt;
+  &lt;<span class="tagname">li</span>&gt;Projetos&lt;/<span class="tagname">li</span>&gt;
+&lt;/<span class="tagname">ul</span>&gt;
+&lt;<span class="tagname">a</span> <span class="attr">href</span>=<span class="str">"#"</span>&gt;Fale comigo&lt;/<span class="tagname">a</span>&gt;</div>
+        <div class="demo-preview">
+          <iframe srcdoc="
+            <style>
+              body{margin:0;padding:24px;font-family:sans-serif;background:#FBF8F2;color:#1F2421;}
+              h1{font-size:1.3rem;margin:0 0 8px;}
+              ul{margin:8px 0;padding-left:18px;}
+              a{color:#1F8F63;font-weight:600;}
+            </style>
+            <h1>Meu primeiro site</h1>
+            <p>Bem-vindo à minha página!</p>
+            <ul><li>Sobre mim</li><li>Projetos</li></ul>
+            <a href='#'>Fale comigo</a>
+          "></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 3</span>
+      <h3>Sua vez de praticar</h3>
+      <p>
+        Copie o código abaixo, cole em um arquivo <code class="tag-mono">.html</code> no seu
+        computador e mude os textos, os links e os itens da lista. Não tem como errar — é só
+        testar e ver o resultado mudar.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">exercicio.html — copie e edite</div>
+      </div>
+      <div class="demo-body" style="grid-template-columns: 1fr;">
+        <div class="demo-code" style="border-right:0;">&lt;<span class="tagname">h1</span>&gt;<span class="str">Coloque seu título aqui</span>&lt;/<span class="tagname">h1</span>&gt;
+&lt;<span class="tagname">p</span>&gt;<span class="str">Escreva uma frase sobre você</span>&lt;/<span class="tagname">p</span>&gt;
+&lt;<span class="tagname">ul</span>&gt;
+  &lt;<span class="tagname">li</span>&gt;<span class="str">primeiro item</span>&lt;/<span class="tagname">li</span>&gt;
+  &lt;<span class="tagname">li</span>&gt;<span class="str">segundo item</span>&lt;/<span class="tagname">li</span>&gt;
+&lt;/<span class="tagname">ul</span>&gt;
+&lt;<span class="tagname">a</span> <span class="attr">href</span>=<span class="str">"#"</span>&gt;<span class="str">seu link aqui</span>&lt;/<span class="tagname">a</span>&gt;</div>
+      </div>
+    </div>
+
+    <div class="curiosidade">
+      <b>Curiosidade:</b> a indentação (os espaços no início das linhas) não muda nada para o
+      navegador — ela existe só para ajudar você, humano, a ler o código mais fácil.
+    </div>
+
+    <div class="nav-footer">
+      <a href="tutorial-2.html">← tutorial 2</a>
+      <a href="tutorial-4.html">tutorial 4: CSS →</a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial 6: Fechando o CSS — &lt;aprenda/&gt;</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="bracket">&lt;</span>aprenda<span class="bracket">/&gt;</span></div>
+  <nav>
+    <a href="index.html">início</a>
+    <a href="tutorial-1.html">tutoriais</a>
+    <a href="#sobre">sobre</a>
+  </nav>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">trilha de tutoriais</div>
+    <div class="tutorial-list">
+      <a class="tutorial-item" href="tutorial-1.html"><span class="dot"></span>tutorial 1</a>
+      <a class="tutorial-item" href="tutorial-2.html"><span class="dot"></span>tutorial 2</a>
+      <a class="tutorial-item" href="tutorial-3.html"><span class="dot"></span>tutorial 3</a>
+      <a class="tutorial-item" href="tutorial-4.html"><span class="dot"></span>tutorial 4</a>
+      <a class="tutorial-item" href="tutorial-5.html"><span class="dot"></span>tutorial 5</a>
+      <a class="tutorial-item active" href="tutorial-6.html"><span class="dot"></span>tutorial 6</a>
+      <a class="tutorial-item" href="tutorial-7.html"><span class="dot"></span>tutorial 7</a>
+      <a class="tutorial-item" href="tutorial-8.html"><span class="dot"></span>tutorial 8</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="eyebrow">parte do tutorial 6</div>
+    <h1 class="tag-heading"><span class="bracket">&lt;</span>fechando o css<span class="bracket">/&gt;</span></h1>
+    <p class="lede">
+      Último tutorial de CSS! Vamos ver um exemplo completo de código, praticar com um exercício
+      usando um HTML já pronto e fechar tudo o que foi aprendido até aqui.
+    </p>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 1</span>
+      <h3>Um exemplo de código CSS</h3>
+      <p>
+        Este exemplo junta várias propriedades que você já viu — cor, fundo, espaçamento e cantos
+        arredondados — em uma única regra, para mostrar como elas trabalham juntas.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">card.css</div>
+        <div class="demo-tab">resultado</div>
+      </div>
+      <div class="demo-body">
+        <div class="demo-code">.<span class="tagname">card</span> {
+  <span class="attr">background-color</span>: <span class="str">#E7FAF1</span>;
+  <span class="attr">color</span>: <span class="str">#1F2421</span>;
+  <span class="attr">padding</span>: <span class="str">18px 22px</span>;
+  <span class="attr">border-radius</span>: <span class="str">10px</span>;
+  <span class="attr">font-size</span>: <span class="str">15px</span>;
+}</div>
+        <div class="demo-preview">
+          <iframe srcdoc="
+            <style>body{margin:0;display:flex;align-items:center;justify-content:center;height:100%;
+              min-height:260px;background:#fff;font-family:sans-serif;}
+              .card{background:#E7FAF1;color:#1F2421;padding:18px 22px;border-radius:10px;font-size:15px;
+                width:200px;}</style>
+            <div class='card'>Assim fica um card com essas regras aplicadas.</div>
+          "></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 2</span>
+      <h3>Exercício: CSS com HTML pronto</h3>
+      <p>
+        O HTML de um pequeno perfil já está pronto abaixo. Escreva o CSS do zero usando o que você
+        aprendeu — cor de fundo, cor do texto, espaçamento e cantos arredondados.
+      </p>
+    </div>
+
+    <div class="demo-wrap">
+      <div class="demo-tabs">
+        <div class="demo-tab active">perfil.html — pronto</div>
+      </div>
+      <div class="demo-body" style="grid-template-columns: 1fr;">
+        <div class="demo-code" style="border-right:0;">&lt;<span class="tagname">div</span> <span class="attr">class</span>=<span class="str">"perfil"</span>&gt;
+  &lt;<span class="tagname">h2</span>&gt;Seu nome&lt;/<span class="tagname">h2</span>&gt;
+  &lt;<span class="tagname">p</span>&gt;Uma frase sobre você&lt;/<span class="tagname">p</span>&gt;
+&lt;/<span class="tagname">div</span>&gt;
+
+<span class="comment">/* escreva o css aqui: .perfil { ... } */</span></div>
+      </div>
+    </div>
+
+    <div class="section-block">
+      <span class="step-tag">conceito 3</span>
+      <h3>Finalização do conteúdo de CSS</h3>
+      <p>
+        Recapitulando: CSS é feito de seletores e declarações, pode mirar em tags ou em classes, e
+        tem propriedades para cor, fundo, tamanho de texto, espaçamento e cantos. Com isso você já
+        consegue estilizar qualquer página HTML. No próximo tutorial começa uma nova etapa: dar
+        vida à página com JavaScript.
+      </p>
+    </div>
+
+    <div class="curiosidade">
+      <b>Curiosidade:</b> existem milhares de propriedades de CSS, mas com menos de 15 delas —
+      as que você viu nesses tutoriais — já dá para estilizar a maioria dos sites do dia a dia.
+    </div>
+
+    <div class="nav-footer">
+      <a href="tutorial-5.html">← tutorial 5</a>
+      <a href="tutorial-7.html">tutorial 7: JavaScript →</a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
